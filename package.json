@@ -5,6 +5,7 @@
   "dependencies": {
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-google-login": "^5.0.7",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0"
   },
@@ -12,7 +13,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject", 
+    "deploy": "npm run build && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -28,5 +30,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "homepage": "https://purlwon.github.io/login_sample",
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
   }
 }
